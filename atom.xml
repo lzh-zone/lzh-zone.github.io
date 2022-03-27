@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-27T03:40:58.647Z</updated>
+  <updated>2022-03-27T07:09:59.133Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习通安装网课帮手脚本教程</title>
+    <link href="http://example.com/2022/03/27/%E5%AD%A6%E4%B9%A0%E9%80%9A%E5%AE%89%E8%A3%85%E7%BD%91%E8%AF%BE%E5%B8%AE%E6%89%8B%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B/"/>
+    <id>http://example.com/2022/03/27/%E5%AD%A6%E4%B9%A0%E9%80%9A%E5%AE%89%E8%A3%85%E7%BD%91%E8%AF%BE%E5%B8%AE%E6%89%8B%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B/</id>
+    <published>2022-03-27T02:08:37.000Z</published>
+    <updated>2022-03-27T07:09:59.133Z</updated>
+    
+    <content type="html"><![CDATA[<p>欢迎来到lzh-zone，这是属于sterling的独家小站，现在是2022年3月27日15点00分，我将更新我的第2篇blog，安装网课帮手脚本。</p><p>1.首先确保tampermonkey（如未安装可自行百度，切记只能在谷歌火狐edge等浏览器中运行）运行正常，打开edge或者geogle浏览器右上角集成油猴左击显示已运行。</p><p>2.确保运行正常后，打开url链接：<a href="http://www.wangkebangshou.cn/">http://www.wangkebangshou.cn/</a>  ，根据需求选择安装超星网课版或考试版。</p><p>3.按照提示安装完毕后，关闭浏览器重启，再打开浏览器超星界面，即可实现全自动化刷网课答题（第一次运行答题功能时记得打勾自动答题）。</p><p>感谢各位看官的观看，欢迎下次再来！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;欢迎来到lzh-zone，这是属于sterling的独家小站，现在是2022年3月27日15点00分，我将更新我的第2篇blog，安装网课帮手脚本。&lt;/p&gt;
+&lt;p&gt;1.首先确保tampermonkey（如未安装可自行百度，切记只能在谷歌火狐edge等浏览器中运行）运行正常，</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>第一篇文</title>
