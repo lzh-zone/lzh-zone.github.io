@@ -1,3 +1,7 @@
+http://example.com/2022/04/03/css%E5%9F%BA%E7%A1%80/
+http://example.com/2022/04/03/css%E8%BF%9B%E9%98%B6/
+http://example.com/2022/04/03/html%E7%AC%94%E8%AE%B0/
+http://example.com/2022/04/03/java%E7%AC%94%E8%AE%B0/
 http://example.com/2022/03/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87/
 http://example.com/2022/03/27/%E5%AD%A6%E4%B9%A0%E9%80%9A%E5%AE%89%E8%A3%85%E7%BD%91%E8%AF%BE%E5%B8%AE%E6%89%8B%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B/
 http://example.com/tags/index.html
