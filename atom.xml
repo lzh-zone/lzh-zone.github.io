@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-03T12:16:36.262Z</updated>
+  <updated>2022-04-14T10:14:21.995Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「油猴脚本」各大网页VIP视频解析（截止4.14稳定运行）</title>
+    <link href="http://example.com/2022/04/14/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/"/>
+    <id>http://example.com/2022/04/14/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/</id>
+    <published>2022-04-14T10:13:00.000Z</published>
+    <updated>2022-04-14T10:14:21.995Z</updated>
+    
+    <content type="html"><![CDATA[<p>欢迎来到lzh-zone，这是属于sterling的独家小站，现在是2022年4月14日17点00分，我将更新我的第6篇blog，安装视频解析脚本，通过此脚本就可以实现不充钱看视频拉。</p><p>1.首先确保tampermonkey（如未安装可自行百度，切记只能在谷歌火狐edge等浏览器中运行）运行正常，打开edge或者geogle浏览器右上角集成油猴左击显示已运行。</p><p>2.确保运行正常后，点击<a href="https://www.zhaojiaoben.cn/download/script/753121da107047bb94a2d5ad34da4f43.user.js">视频解析</a>  ，再点击安装视频解析自用版。</p><p>3.按照提示安装完毕后，关闭浏览器重启，再打开某奇艺某讯某果视频，选择想看的视频后点击左边的小方块选择可用的线路，即可实现观看视频拉，快去试试吧！</p><p>感谢各位看官的观看，欢迎下次再来！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;欢迎来到lzh-zone，这是属于sterling的独家小站，现在是2022年4月14日17点00分，我将更新我的第6篇blog，安装视频解析脚本，通过此脚本就可以实现不充钱看视频拉。&lt;/p&gt;
+&lt;p&gt;1.首先确保tampermonkey（如未安装可自行百度，切记只能在谷歌火</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>「学习笔记」CSS基础</title>
