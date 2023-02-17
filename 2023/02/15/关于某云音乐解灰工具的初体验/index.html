@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>「netease」关于某云音乐解灰工具的初体验 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="&lt;h2&gt;0.1 困扰&lt;&#x2F;h2&gt;  &amp;nbsp; 由于经常被某云版权音乐所困扰，因此up主也一直再找办法去解决这个问题。直到有一天，发现在GitHub有一个博主的项目叫UnblockNeteaseMusic，完美解锁网易云音乐客户端变灰歌曲。 &amp;nbsp; 1.1 开工研究 &amp;nbsp; &amp;nbsp; 首先必须安排我们熟悉的node了，该程序使用node运行。 没安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「netease」关于某云音乐解灰工具的初体验">
+<meta property="og:url" content="http://example.com/2023/02/15/%E5%85%B3%E4%BA%8E%E6%9F%90%E4%BA%91%E9%9F%B3%E4%B9%90%E8%A7%A3%E7%81%B0%E5%B7%A5%E5%85%B7%E7%9A%84%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="&lt;h2&gt;0.1 困扰&lt;&#x2F;h2&gt;  &amp;nbsp; 由于经常被某云版权音乐所困扰，因此up主也一直再找办法去解决这个问题。直到有一天，发现在GitHub有一个博主的项目叫UnblockNeteaseMusic，完美解锁网易云音乐客户端变灰歌曲。 &amp;nbsp; 1.1 开工研究 &amp;nbsp; &amp;nbsp; 首先必须安排我们熟悉的node了，该程序使用node运行。 没安装">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blog.lzhtv.cf/wp-content/uploads/2023/01/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2023-01-16-175315.png">
+<meta property="og:image" content="https://blog.lzhtv.cf/wp-content/uploads/2023/01/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2023-01-16-175647.png">
+<meta property="article:published_time" content="2023-02-15T12:13:00.000Z">
+<meta property="article:modified_time" content="2023-02-15T12:27:37.359Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.lzhtv.cf/wp-content/uploads/2023/01/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2023-01-16-175315.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-关于某云音乐解灰工具的初体验" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/15/%E5%85%B3%E4%BA%8E%E6%9F%90%E4%BA%91%E9%9F%B3%E4%B9%90%E8%A7%A3%E7%81%B0%E5%B7%A5%E5%85%B7%E7%9A%84%E5%88%9D%E4%BD%93%E9%AA%8C/" class="article-date">
+  <time class="dt-published" datetime="2023-02-15T12:13:00.000Z" itemprop="datePublished">2023-02-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      「netease」关于某云音乐解灰工具的初体验
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <pre><code>    &lt;h2&gt;0.1 困扰&lt;/h2&gt;
+</code></pre>
+<p>&nbsp;</p>
+<p>由于经常被某云版权音乐所困扰，因此up主也一直再找办法去解决这个问题。直到有一天，发现在GitHub有一个博主的项目叫<strong><a href="https://github.com/UnblockNeteaseMusic" target="_blank"  rel="nofollow" >UnblockNeteaseMusic，完美解锁网易云音乐客户端变灰歌曲。</a></strong></p>
+<p>&nbsp;</p>
+<h2>1.1 开工研究</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>首先必须安排我们熟悉的node了，该程序使用node运行。</p>
+<p>没安装的看官需要下载Node.js并且安装，安装时候直接默认设置就行。<a href="https://nodejs.org/zh-cn/download/" target="_blank"  rel="nofollow" > Node</a>官网下载地址：https://nodejs.org/zh-cn/download/下载长期维护版就行了。</p>
+<p>&nbsp;</p>
+<h2>1.2 下载官方程序包</h2>
+<p>接下来根据md文件去下载<span class="author flex-self-stretch"><a class="url fn link-instanted" href="https://github.com/UnblockNeteaseMusic" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/UnblockNeteaseMusic/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" target="_blank"  rel="nofollow" >UnblockNeteaseMusic</a></span><span class="mx-1 flex-self-stretch color-fg-muted">/</span><strong class="mr-2 flex-self-stretch"><a class="link-instanted" href="https://github.com/UnblockNeteaseMusic/server" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" target="_blank"  rel="nofollow" >server</a></strong> <a class="link-instanted" href="https://github.com/UnblockNeteaseMusic/server/releases" data-view-component="true" data-turbo-frame="repo-content-turbo-frame" target="_blank"  rel="nofollow" >Releases</a> <a href="https://github.com/UnblockNeteaseMusic/server/releases/tag/v0.27.0" aria-current="page" data-view-component="true" data-turbo-frame="repo-content-turbo-frame" target="_blank"  rel="nofollow" >v0.27.0</a></p>
+<p>有小伙伴可能GitHub被墙或者很慢，可以使用以下两种方法改善</p>
+<p>&nbsp;</p>
+<h2>1.2.1 油猴插件</h2>
+<h2>gh-proxy+油猴脚本</h2>
+<p data-pid="dzgZMdqc">  实际上，目前大部分的情况属于GitHub网站可以正常访问，但是图片、文件的加载、release文件的下载和仓库克隆的速度较慢。</p>
+<p data-pid="Czx6A3Bx">  接下来介绍的两种方式便是针对这些情况的解决方案，也是这篇文章介绍的重点。</p>
+<h3>gh-proxy</h3>
+<p data-pid="-qG6D4v3">  首先要介绍的是gh-proxy项目。</p>
+<p data-pid="CD6E1ln6">gh-proxy是一个通过镜像站点和CDN，或者cloudflare Worker来加速GitHub的项目。</p>
+<p data-pid="SbEYFTsK">Demo页面：<a class="external link-instanted" href="https://gh.api.99988866.xyz/" target="_blank" rel="nofollow noopener noreferrer" data-za-detail-view-id="1043" rel="nofollow" ><span class="invisible">https://</span><span class="visible">gh.api.99988866.xyz/</span></a></p>
+<p data-pid="w_otHJwO">项目地址：<a class="external link-instanted" href="https://github.com/hunshcn/gh-proxy" target="_blank" rel="nofollow noopener noreferrer" data-za-detail-view-id="1043" rel="nofollow" ><span class="invisible">https://</span><span class="visible">github.com/hunshcn/gh-poxy</span></a></p>
+<h3>油猴脚本gh-proxy-buttons</h3>
+<p data-pid="8-21sRcc">项目地址：<a class="external link-instanted" href="https://github.com/du33169/gh-proxy-buttons" target="_blank" rel="nofollow noopener noreferrer" data-za-detail-view-id="1043" rel="nofollow" ><span class="invisible">https://</span><span class="visible">github.com/du33169/gh-p</span><span class="invisible">roxy-buttons</span></a></p>
+<p data-pid="_4d2rLci">这个油猴脚本利用gh-proxy，可以在GitHub网页实现如下的功能：</p>
+<p data-pid="y4qFGc0B">对于链接和文件，鼠标悬停时显示一个按钮，点击即可通过gh-proxy加速下载；</p>
+<p data-pid="aI0nCX3y">对于仓库地址（HTTPS），点击按钮后复制 带上加速前缀的 仓库地址，clone时可以直接粘贴使用。</p>
+<h2>1.2.2 查ip+修改host</h2>
+<p data-pid="JO40IUMf">  直接查找真实IP地址，修改hosts文件以避开DNS污染。</p>
+<h3>步骤</h3>
+<ol>
+<li data-pid="yuK6Vv0_">使用<a class=" external" href="https://www.ipaddress.com/" target="_blank" rel="nofollow noopener noreferrer" data-za-detail-view-id="1043" rel="nofollow" ><span class="invisible">https://www.</span><span class="visible">ipaddress.com/</span></a>来查找github的IP（主要是raw.githubusercontent.com）</li>
+<li data-pid="t9lxDZuJ">修改本地hosts文件</li>
+<li data-pid="xpqsqiUf">刷新DNS缓存:<code>ipconfig /flushdns</code></li>
+</ol>
+<p>&nbsp;</p>
+<h2>1.3   写bat脚本</h2>
+<p>所有环境安装完毕后，我们就得开始配置文件咯。</p>
+<p>先写一个bat可执行文件去干他，</p>
+<p>start cmd /k "cd /d C:\本地文件路径...\UnblockNeteaseMusic-master &amp;&amp; node app.js -p 代理端口 -f 某易IP"</p>
+<p>本地文件路径:UnblockNeteaseMusic在本地符盘的路径位置</p>
+<p>代理端口:自定义端口（我用的10086 ，就是瞎定义的，但别太靠前占用本地端口，hhhhhh）</p>
+<p>网易IP:ping官网得到的ip地址</p>
+<p>&nbsp;</p>
+<p>配置完成后，会有以下效果图：</p>
+<p><img decoding="async"   alt="" data-src="https://blog.lzhtv.cf/wp-content/uploads/2023/01/屏幕截图-2023-01-16-175315.png" class="alignnone size-full wp-image-48 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" class="alignnone size-full wp-image-48" src="https://blog.lzhtv.cf/wp-content/uploads/2023/01/屏幕截图-2023-01-16-175315.png" alt="" /></noscript></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>这就代表我们配置的过程基本结束，最后一步啦</p>
+<p>&nbsp;</p>
+<h2>1.4   更改某易的代理端口</h2>
+<p>打开网易云后，点开设置，往下划拉到http代理</p>
+<p>更改代理ip为127.0.0.1（就是本机），端口为自定义端口（我的是10086），图中不是</p>
+<p><img decoding="async"   alt="" data-src="https://blog.lzhtv.cf/wp-content/uploads/2023/01/屏幕截图-2023-01-16-175647.png" class="alignnone size-full wp-image-49 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" class="alignnone size-full wp-image-49" src="https://blog.lzhtv.cf/wp-content/uploads/2023/01/屏幕截图-2023-01-16-175647.png" alt="" /></noscript></p>
+<p>&nbsp;</p>
+<p>然后点测试，出现可用后就确定，重启之后就可以尽情享受啦！（日常白票）</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>  Tips：</h2>
+<p>1.每次启用前，务必开启可执行bat文件，打开代理端口</p>
+<p>2.程序只在某易 2.9.5版本前通过测试，之后就被屏蔽了。所以记得安装<a href="https://xiaodao.lanzoui.com/b0dqa8f6j" target="_blank"  rel="nofollow" >某易2.9.5 地址：https://xiaodao.lanzoui.com/b0dqa8f6j</a></p>
+<p>3.原理总结：根据端口后台显示，我发现程序原理就是用其他音乐站进行资源替换，所以可能会出现没有音乐的情况。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/02/15/%E5%85%B3%E4%BA%8E%E6%9F%90%E4%BA%91%E9%9F%B3%E4%B9%90%E8%A7%A3%E7%81%B0%E5%B7%A5%E5%85%B7%E7%9A%84%E5%88%9D%E4%BD%93%E9%AA%8C/" data-id="cle7uei5i0004ysu54xb1h7cs" data-title="「netease」关于某云音乐解灰工具的初体验" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/02/17/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/04/20/2023%E8%80%83%E7%A0%94%E6%95%B0%E4%BA%8C%E8%B5%84%E6%96%99%E5%88%86%E4%BA%AB/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">「一研为定」23数二辅导书pdf分享</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/02/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87/">第一篇文</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/17/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/15/%E5%85%B3%E4%BA%8E%E6%9F%90%E4%BA%91%E9%9F%B3%E4%B9%90%E8%A7%A3%E7%81%B0%E5%B7%A5%E5%85%B7%E7%9A%84%E5%88%9D%E4%BD%93%E9%AA%8C/">「netease」关于某云音乐解灰工具的初体验</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/20/2023%E8%80%83%E7%A0%94%E6%95%B0%E4%BA%8C%E8%B5%84%E6%96%99%E5%88%86%E4%BA%AB/">「一研为定」23数二辅导书pdf分享</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/14/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/">「油猴脚本」各大网页VIP视频解析（截止4.14稳定运行）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
