@@ -1,16 +1,3 @@
-# Loading Animation (加载动画)
-preloader:
-  enable: true
-  # source
-  # 1. fullpage-loading
-  # 2. pace (progress bar)
-  # else all
-  source: 3
-  # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: /css/progress_bar.css
-
-
-
 // 返回顶部 显示网页阅读进度
 window.onscroll = percent; // 执行函数
 // 页面百分比
