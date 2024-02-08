@@ -16,8 +16,8 @@ https://old.lzh1.eu.org/categories/index.html
 https://old.lzh1.eu.org/zyk.json
 https://old.lzh1.eu.org/
 https://old.lzh1.eu.org/tags/%E6%96%B0%E9%97%BB-%E6%AF%8F%E6%97%A5%E6%9B%B4%E6%96%B0/
-https://old.lzh1.eu.org/tags/cloudflare-%E5%9F%9F%E5%90%8D-cdn-%E5%8A%A0%E9%80%9F/
 https://old.lzh1.eu.org/tags/music-aplayer-meting/
+https://old.lzh1.eu.org/tags/cloudflare-%E5%9F%9F%E5%90%8D-cdn-%E5%8A%A0%E9%80%9F/
 https://old.lzh1.eu.org/tags/2024-%E8%80%83%E7%A0%94-%E4%BA%8C%E6%88%98/
 https://old.lzh1.eu.org/categories/%E6%97%A9%E6%8A%A5/
 https://old.lzh1.eu.org/categories/%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/
