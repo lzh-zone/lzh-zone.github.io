@@ -6,7 +6,7 @@
   <link href="https://old.lzh1.eu.org/atom.xml" rel="self"/>
   
   <link href="https://old.lzh1.eu.org/"/>
-  <updated>2024-01-10T04:59:21.516Z</updated>
+  <updated>2024-02-08T13:53:54.384Z</updated>
   <id>https://old.lzh1.eu.org/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「折腾日记」记一次更换域名</title>
+    <link href="https://old.lzh1.eu.org/2024/02/08/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%8D%A2%E5%9F%9F%E5%90%8D/"/>
+    <id>https://old.lzh1.eu.org/2024/02/08/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%8D%A2%E5%9F%9F%E5%90%8D/</id>
+    <published>2024-02-08T13:26:00.000Z</published>
+    <updated>2024-02-08T13:53:54.384Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong><h2>前言</h2></strong></h2><p>在今天，我遇到了一个令人不愉快的事情。Freenom，一家提供免费域名服务多年的公司，突然宣布收回了所有后缀免费域名。这对我来说是个巨大的打击，因为我在Freenom上拥有多个站点，这些站点的服务都依赖于这些域名的解析。然而，现在所有的域名都无法正常解析了，我的网站也无法访问了，许多测试服务全部下线。</p><h2 id="所有域名变成pending"><a href="#所有域名变成pending" class="headerlink" title="所有域名变成pending"></a><strong><h2>所有域名变成pending</h2></strong></h2><h2 id="登录上freenom官网，发现我的域名页面直接全部变成下图的样子"><a href="#登录上freenom官网，发现我的域名页面直接全部变成下图的样子" class="headerlink" title="登录上freenom官网，发现我的域名页面直接全部变成下图的样子"></a>登录上freenom官网，发现我的域名页面直接全部变成下图的样子<br><img src="https://img2.imgtp.com/2024/02/08/NTkV9H5g.png" alt="freenom官网"></h2><h2 id="可以看到，离域名过期还有至少半年，强制收回了检查域名可用性"><a href="#可以看到，离域名过期还有至少半年，强制收回了检查域名可用性" class="headerlink" title="可以看到，离域名过期还有至少半年，强制收回了检查域名可用性"></a>可以看到，离域名过期还有至少半年，强制收回了<br><strong><h2>检查域名可用性</h2></strong></h2><p>在我逐个站点的排查下，发现部分域名还是有解析的，即使他现在是pending的状态，但我感觉用不长久了，毕竟是免费的，现在freenom也是濒临倒闭的状态，立马准备丢掉了。</p><h2 id="寻找替代方案"><a href="#寻找替代方案" class="headerlink" title="寻找替代方案"></a><strong><h2>寻找替代方案</h2></strong></h2><p>对这个突发情况，我必须迅速采取行动来恢复我的站点服务。首先，我决定寻找替代的域名注册服务。在研究了几个选项后，我决定选择.xyz后缀域名。.xyz后缀是一个相对较新的通用顶级域名（gTLD），它提供了一种低廉的注册费用和广泛的可用性。</p><p>我前往一个可靠的域名注册网站spaceship，并进行了购买。我发现，购买一个.xyz域名相对便宜，只需要支付8美元，并且可以注册为期10年。这对学生党来说是一个不错的选择，因为我可以长期使用这个域名来维护我的站点。</p><p><img src="https://img2.imgtp.com/2024/02/08/GIrbi98c.png" alt="新域名"></p><p>目前暂时将博客停靠在 lzh1.eu.org<a href="https://lzh1.eu.org/">暂时地址</a>，我需要检查下之前部署的服务，事发突然，目前准备开始迁移部分web应用！</p><h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a><strong><h2>结论</h2></strong></h2><p>在我所有的站点服务突然解析失败的情况下，Freenom收回所有后缀免费域名给我带来了巨大的困扰。然而，通过购买一个10年期限的.xyz后缀域名，人称小姨子域名，但作为个人博客网站域名，我觉得足以，不需要买一个COM之类的，续费太贵。这个过程让我意识到域名的重要性，同时也让我对备用方案和选择有了更深入的了解。</p><p>尽管我遇到了一些困难，但我相信我能够通过这次经历变得更加坚强和有经验。对于其他人来说，我也希望这篇文章能够提醒大家在选择免费域名时要谨慎，并考虑备用方案，以免在类似情况下遭受损失。</p><p>最后的最后，告诉白嫖的永远是最贵，希望大家还是珍惜教训，花点钱解决大麻烦把！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;h2&gt;前言&lt;/h2&gt;&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;在今天，我遇到了一个令人不愉快的事情。Freenom，一家提供免费域名服务多年的公司，突</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>[技术分享] 非常手段CNAME接入任何域名到CF</title>
